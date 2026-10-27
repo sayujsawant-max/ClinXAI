@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.streamlit/secrets.toml
+report/archive_full_version/
+report/archive_35page_version/
+report/build/*.json

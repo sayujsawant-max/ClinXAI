@@ -1,0 +1,18 @@
+PS C:\Projects\ClinXAI> python evaluate.py
+SHAP additivity check on 114 test patients: max |error| = 4.44e-16
+Running LIME on 114 test patients ...
+Case 1 (Clearly malignant), patient 70: Model predicts Malignant with P(malignant)=1.000 (actual: Malignant; correct). LIME and SHAP share 5/5 top features (Jaccard 1.00; Spearman rho over |attributions| 0.90). No direction disagreement within the top-5 union. LIME surrogate local fit R^2=0.63; top-5 stability across 5 seeds: mean Jaccard 0.87.
+Case 2 (Clearly benign), patient 74: Model predicts Benign with P(malignant)=0.000 (actual: Benign; correct). LIME and SHAP share 5/5 top features (Jaccard 1.00; Spearman rho over |attributions| 0.83). No direction disagreement within the top-5 union. LIME surrogate local fit R^2=0.17; top-5 stability across 5 seeds: mean Jaccard 1.00.
+Case 3 (Borderline), patient 100: Model predicts Malignant with P(malignant)=0.513 (actual: Malignant; correct). LIME and SHAP share 2/5 top features (Jaccard 0.25; Spearman rho over |attributions| 0.60). Opposite direction for: area error, worst perimeter. LIME surrogate local fit R^2=0.05; top-5 stability across 5 seeds: mean Jaccard 0.48.
+Case 4 (Ranking divergence), patient 86: Model predicts Benign with P(malignant)=0.297 (actual: Malignant; INCORRECT). LIME and SHAP share 0/5 top features (Jaccard 0.00; Spearman rho over |attributions| 0.27). Opposite direction for: worst area, worst perimeter, mean concave points, area error. LIME surrogate local fit R^2=0.03; top-5 stability across 5 seeds: mean Jaccard 0.39.
+Case 5 (Direction disagreement), patient 73: Model predicts Benign with P(malignant)=0.160 (actual: Malignant; INCORRECT). LIME and SHAP share 1/5 top features (Jaccard 0.11; Spearman rho over |attributions| 0.39). Opposite direction for: worst area, worst perimeter, mean concavity, mean concave points. LIME surrogate local fit R^2=0.06; top-5 stability across 5 seeds: mean Jaccard 0.60.
+
+Aggregate LIME vs SHAP agreement over the test set:
+  n_patients: 114
+  mean_top5_jaccard: 0.6230
+  mean_top5_overlap: 3.6579
+  mean_spearman_abs: 0.6998
+  pct_patients_with_direction_disagreement: 28.9474
+  mean_lime_local_r2: 0.2739
+
+Outputs written to C:\Projects\ClinXAI\outputs

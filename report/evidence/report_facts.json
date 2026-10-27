@@ -1,0 +1,120 @@
+{
+ "corr": {
+  "worst area | worst perimeter": 0.977,
+  "worst radius | worst perimeter": 0.994,
+  "worst area | worst radius": 0.983,
+  "mean radius | mean perimeter": 0.998,
+  "mean area | worst area": 0.958,
+  "mean concave points | worst concave points": 0.912
+ },
+ "n_pairs_corr_gt_0.9": 21,
+ "case_values": {
+  "70": {
+   "worst area": 1866.0,
+   "worst perimeter": 165.9,
+   "worst radius": 24.86,
+   "mean concavity": 0.108,
+   "mean concave points": 0.0795,
+   "area error": 96.05,
+   "worst texture": 26.58,
+   "worst concave points": 0.1789
+  },
+  "74": {
+   "worst area": 611.1,
+   "worst perimeter": 89.71,
+   "worst radius": 14.11,
+   "mean concavity": 0.0337,
+   "mean concave points": 0.0227,
+   "area error": 19.68,
+   "worst texture": 23.21,
+   "worst concave points": 0.0866
+  },
+  "100": {
+   "worst area": 906.5,
+   "worst perimeter": 108.6,
+   "worst radius": 16.99,
+   "mean concavity": 0.0862,
+   "mean concave points": 0.0449,
+   "area error": 43.14,
+   "worst texture": 35.27,
+   "worst concave points": 0.1184
+  },
+  "86": {
+   "worst area": 808.9,
+   "worst perimeter": 108.4,
+   "worst radius": 16.21,
+   "mean concavity": 0.1204,
+   "mean concave points": 0.0494,
+   "area error": 38.87,
+   "worst texture": 29.25,
+   "worst concave points": 0.1225
+  },
+  "73": {
+   "worst area": 812.4,
+   "worst perimeter": 110.3,
+   "worst radius": 16.57,
+   "mean concavity": 0.0779,
+   "mean concave points": 0.0507,
+   "area error": 23.35,
+   "worst texture": 20.86,
+   "worst concave points": 0.1383
+  }
+ },
+ "worst_area_train_quartiles": [
+  516.15,
+  683.4,
+  1122.5
+ ],
+ "worst_area_train_minmax": [
+  185.2,
+  4254.0
+ ],
+ "kernel_width_default": 4.108,
+ "lime_default_regressor_line": [
+  "model_regressor = Ridge(alpha=1, fit_intercept=True,"
+ ],
+ "lime_kernel_lines": [
+  "kernel_width: kernel width for the exponential kernel.",
+  "kernel_width = np.sqrt(training_data.shape[1]) * .75",
+  "return np.sqrt(np.exp(-(d ** 2) / kernel_width ** 2))"
+ ],
+ "rf_params": {
+  "bootstrap": "True",
+  "criterion": "gini",
+  "max_depth": "None",
+  "max_features": "sqrt",
+  "min_samples_leaf": "1",
+  "n_estimators": "300",
+  "random_state": "42"
+ },
+ "lr_params": {
+  "logisticregression__C": "1.0",
+  "logisticregression__max_iter": "5000",
+  "logisticregression__penalty": "deprecated",
+  "logisticregression__solver": "lbfgs"
+ },
+ "train_malignant": 170,
+ "train_benign": 285,
+ "rf_structure": {
+  "total_nodes": 10976,
+  "mean_nodes": 36.6,
+  "mean_depth": 7.4,
+  "max_depth": 12,
+  "mean_leaves": 18.8,
+  "total_leaves": 5638
+ },
+ "line_counts": {
+  "app.py": 488,
+  "train_model.py": 89,
+  "evaluate.py": 183,
+  "src/__init__.py": 3,
+  "src/config.py": 41,
+  "src/data_loader.py": 124,
+  "src/model.py": 109,
+  "src/explain_lime.py": 94,
+  "src/explain_shap.py": 80,
+  "src/comparison.py": 125,
+  "src/visualization.py": 298,
+  "tests/test_pipeline.py": 282
+ }
+}

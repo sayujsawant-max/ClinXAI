@@ -1,0 +1,8 @@
+{
+  "max_abs_error": 4.440892098500626e-16,
+  "tolerance": 1e-06,
+  "n_patients": 114,
+  "base_value_p_malignant": 0.3746739926739926,
+  "explainer": "shap.TreeExplainer(feature_perturbation='tree_path_dependent')",
+  "output": "P(malignant) \u2014 probability units"
+}

@@ -1,0 +1,172 @@
+[
+ {
+  "check": "Seven tabs rendered in the browser",
+  "passed": true,
+  "detail": "['Overview', 'Diagnostic Prediction', 'LIME Explanation', 'SHAP Explanation', 'LIME vs SHAP', 'Model Evaluation', 'Case Studies']"
+ },
+ {
+  "check": "Title banner shown",
+  "passed": true,
+  "detail": "ClinXAI \u2014 Transparent Clinical Diagnostics"
+ },
+ {
+  "check": "Educational disclaimer visible",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "[Overview] images render (>= 1), none broken, no exceptions/errors",
+  "passed": true,
+  "detail": "1 images, broken=[], exceptions=0, errors=[]"
+ },
+ {
+  "check": "[Diagnostic Prediction] images render (>= 1), none broken, no exceptions/errors",
+  "passed": true,
+  "detail": "1 images, broken=[], exceptions=0, errors=[]"
+ },
+ {
+  "check": "[LIME Explanation] images render (>= 1), none broken, no exceptions/errors",
+  "passed": true,
+  "detail": "1 images, broken=[], exceptions=0, errors=[]"
+ },
+ {
+  "check": "[SHAP Explanation] images render (>= 4), none broken, no exceptions/errors",
+  "passed": true,
+  "detail": "4 images, broken=[], exceptions=0, errors=[]"
+ },
+ {
+  "check": "[LIME vs SHAP] images render (>= 1), none broken, no exceptions/errors",
+  "passed": true,
+  "detail": "1 images, broken=[], exceptions=0, errors=[]"
+ },
+ {
+  "check": "[Model Evaluation] images render (>= 2), none broken, no exceptions/errors",
+  "passed": true,
+  "detail": "2 images, broken=[], exceptions=0, errors=[]"
+ },
+ {
+  "check": "[Case Studies] images render (>= 1), none broken, no exceptions/errors",
+  "passed": true,
+  "detail": "6 images, broken=[], exceptions=0, errors=[]"
+ },
+ {
+  "check": "Default patient #70: P(malignant) = 1.000 and label Malignant",
+  "passed": true,
+  "detail": "1.000"
+ },
+ {
+  "check": "SHAP base value shown as 0.375",
+  "passed": true,
+  "detail": "0.375"
+ },
+ {
+  "check": "Patient #70 LIME vs SHAP overlap 5/5",
+  "passed": true,
+  "detail": "5 / 5"
+ },
+ {
+  "check": "Patient switch -> #86 header, P=0.297, Benign output, actual Malignant",
+  "passed": true,
+  "detail": "0.297"
+ },
+ {
+  "check": "LIME tab updated to #86 (R\u00b2 0.03)",
+  "passed": true,
+  "detail": "0.03"
+ },
+ {
+  "check": "SHAP local values changed after switching patient",
+  "passed": true,
+  "detail": "+0.625 -> -0.078"
+ },
+ {
+  "check": "Patient #86 comparison: 0/5 overlap, 4 direction disagreements",
+  "passed": true,
+  "detail": "0 / 5, 4"
+ },
+ {
+  "check": "Comparison figure re-rendered for #86 without errors",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "LIME stability for #86 computed in browser (expected 0.39 from case study)",
+  "passed": true,
+  "detail": "0.39"
+ },
+ {
+  "check": "Changing LIME seed re-runs LIME (R\u00b2 changes or stays plausible)",
+  "passed": true,
+  "detail": "seed42 R\u00b2=0.03, seed7 R\u00b2=0.02"
+ },
+ {
+  "check": "Seed restored to 42 reproduces R\u00b2 0.03",
+  "passed": true,
+  "detail": "0.03"
+ },
+ {
+  "check": "Patient #100 borderline P=0.513",
+  "passed": true,
+  "detail": "0.513"
+ },
+ {
+  "check": "What-if worst area 906.5 -> 500 flips to Benign with P=0.363",
+  "passed": true,
+  "detail": "0.363"
+ },
+ {
+  "check": "SHAP tab reflects adjusted values",
+  "passed": true,
+  "detail": "0.363"
+ },
+ {
+  "check": "Interactive SHAP force plot renders SVG inside iframe",
+  "passed": true,
+  "detail": "1 frames, 1 svg"
+ },
+ {
+  "check": "Case Studies lists 'Case 1: Clearly malignant \u2014 Patient #70'",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "Case Studies lists 'Case 2: Clearly benign \u2014 Patient #74'",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "Case Studies lists 'Case 3: Borderline \u2014 Patient #100'",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "Case Studies lists 'Case 4: Ranking divergence \u2014 Patient #86'",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "Case Studies lists 'Case 5: Direction disagreement \u2014 Patient #73'",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "'Open patient #73' button switches the whole app to #73 (P=0.160)",
+  "passed": true,
+  "detail": "sidebar='Patient #73 \u2014 actual Malignant, P=0.16  \u2605 Direction disagreement', header='Patient #73', P=0.160"
+ },
+ {
+  "check": "Patient #73 comparison: 1/5 overlap, 4 direction disagreements",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "Model Evaluation metrics shown (0.9737 / 1.0000 / 0.9286 / 0.9630 / 0.9944)",
+  "passed": true,
+  "detail": ""
+ },
+ {
+  "check": "No browser console/page errors",
+  "passed": true,
+  "detail": ""
+ }
+]

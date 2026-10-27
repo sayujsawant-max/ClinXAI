@@ -1,0 +1,44 @@
+{
+  "spearman_confidence_vs_jaccard": 0.6012900768443163,
+  "spearman_confidence_vs_lime_r2": 0.487167832728111,
+  "n_confident_ge_0.4": 90,
+  "mean_jaccard_confident": 0.6922155555555556,
+  "mean_r2_confident": 0.30308999999999997,
+  "n_uncertain_lt_0.4": 24,
+  "mean_jaccard_uncertain": 0.3634375,
+  "mean_r2_uncertain": 0.16422083333333334,
+  "overlap_count_distribution": {
+    "0": 1,
+    "1": 2,
+    "2": 19,
+    "3": 18,
+    "4": 47,
+    "5": 27
+  },
+  "false_negatives": [
+    {
+      "patient_id": 73,
+      "p_malignant": 0.16,
+      "jaccard_top_k": 0.1111,
+      "spearman_abs_all_features": 0.3927,
+      "lime_local_r2": 0.0606,
+      "n_direction_disagreements": 4
+    },
+    {
+      "patient_id": 86,
+      "p_malignant": 0.2967,
+      "jaccard_top_k": 0.0,
+      "spearman_abs_all_features": 0.269,
+      "lime_local_r2": 0.0274,
+      "n_direction_disagreements": 4
+    },
+    {
+      "patient_id": 385,
+      "p_malignant": 0.19,
+      "jaccard_top_k": 0.25,
+      "spearman_abs_all_features": 0.2427,
+      "lime_local_r2": 0.0484,
+      "n_direction_disagreements": 3
+    }
+  ]
+}

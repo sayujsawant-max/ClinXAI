@@ -1,0 +1,32 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-9.1.1, pluggy-1.7.0 -- C:\Projects\ClinXAI\.venv\Scripts\python.exe
+rootdir: C:\Projects\ClinXAI
+plugins: anyio-4.15.1
+collecting ... collected 24 items
+
+tests/test_pipeline.py::test_dataset_loading PASSED                      [  4%]
+tests/test_pipeline.py::test_malignant_benign_mapping PASSED             [  8%]
+tests/test_pipeline.py::test_feature_ordering PASSED                     [ 12%]
+tests/test_pipeline.py::test_split_stratified_without_leakage PASSED     [ 16%]
+tests/test_pipeline.py::test_model_prediction_and_probability_range PASSED [ 20%]
+tests/test_pipeline.py::test_metrics_use_malignant_as_positive PASSED    [ 25%]
+tests/test_pipeline.py::test_bundle_roundtrip PASSED                     [ 29%]
+tests/test_pipeline.py::test_lime_explanation PASSED                     [ 33%]
+tests/test_pipeline.py::test_lime_explains_malignant_class PASSED        [ 37%]
+tests/test_pipeline.py::test_shap_explanation_shape PASSED               [ 41%]
+tests/test_pipeline.py::test_shap_additivity PASSED                      [ 45%]
+tests/test_pipeline.py::test_shap_format_normalisation PASSED            [ 50%]
+tests/test_pipeline.py::test_comparison_identical_and_opposite PASSED    [ 54%]
+tests/test_pipeline.py::test_case_selection PASSED                       [ 58%]
+tests/test_pipeline.py::test_lime_stability PASSED                       [ 62%]
+tests/test_pipeline.py::test_plot_creation PASSED                        [ 66%]
+tests/test_pipeline.py::test_invalid_numeric_input[<lambda>-Non-finite0] PASSED [ 70%]
+tests/test_pipeline.py::test_invalid_numeric_input[<lambda>-Non-finite1] PASSED [ 75%]
+tests/test_pipeline.py::test_invalid_numeric_input[<lambda>-Negative] PASSED [ 79%]
+tests/test_pipeline.py::test_invalid_numeric_input[<lambda>-numeric] PASSED [ 83%]
+tests/test_pipeline.py::test_invalid_numeric_input[<lambda>-Missing] PASSED [ 87%]
+tests/test_pipeline.py::test_invalid_numeric_input[<lambda>-Unknown] PASSED [ 91%]
+tests/test_pipeline.py::test_invalid_input_length PASSED                 [ 95%]
+tests/test_pipeline.py::test_streamlit_app_runs_and_updates_on_patient_change PASSED [100%]
+
+============================= 24 passed in 17.82s =============================

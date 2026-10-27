@@ -1,0 +1,1192 @@
+{
+  "aggregate_test_set": {
+    "n_patients": 114,
+    "mean_top5_jaccard": 0.6229810637705375,
+    "mean_top5_overlap": 3.6578947368421053,
+    "mean_spearman_abs": 0.6998224147688463,
+    "pct_patients_with_direction_disagreement": 28.947368421052634,
+    "mean_lime_local_r2": 0.27385788368972425
+  },
+  "cases": [
+    {
+      "case": 1,
+      "case_type": "Clearly malignant",
+      "patient_id": 70,
+      "criterion": "Highest predicted P(malignant) on the held-out test set",
+      "found": true,
+      "true_label": "Malignant",
+      "p_malignant": 1.0,
+      "shap_base_value": 0.3746739926739926,
+      "shap_sum": 0.6253260073260074,
+      "lime_intercept": 0.26801587358556955,
+      "lime_local_pred": 1.00064891436116,
+      "lime_local_r2": 0.6259760971273007,
+      "comparison": {
+        "k": 5,
+        "lime_top_k": [
+          "worst area",
+          "worst concave points",
+          "worst perimeter",
+          "worst radius",
+          "mean concave points"
+        ],
+        "shap_top_k": [
+          "worst area",
+          "worst perimeter",
+          "worst concave points",
+          "worst radius",
+          "mean concave points"
+        ],
+        "shared_top_k": [
+          "worst area",
+          "worst concave points",
+          "worst perimeter",
+          "worst radius",
+          "mean concave points"
+        ],
+        "top_k_overlap": 5,
+        "jaccard_top_k": 1.0,
+        "spearman_abs_all_features": 0.8981090100111234,
+        "direction_agreement_shared": 1.0,
+        "direction_disagreements_union": []
+      },
+      "direction_table": [
+        {
+          "feature": "worst area",
+          "lime_weight": 0.13751,
+          "shap_value": 0.10868,
+          "lime_rank": 1,
+          "shap_rank": 1,
+          "in_lime_top_k": true,
+          "in_shap_top_k": true,
+          "same_direction": true
+        },
+        {
+          "feature": "worst concave points",
+          "lime_weight": 0.1155,
+          "shap_value": 0.07645,
+          "lime_rank": 2,
+          "shap_rank": 3,
+          "in_lime_top_k": true,
+          "in_shap_top_k": true,
+          "same_direction": true
+        },
+        {
+          "feature": "worst perimeter",
+          "lime_weight": 0.0993,
+          "shap_value": 0.08837,
+          "lime_rank": 3,
+          "shap_rank": 2,
+          "in_lime_top_k": true,
+          "in_shap_top_k": true,
+          "same_direction": true
+        },
+        {
+          "feature": "worst radius",
+          "lime_weight": 0.08969,
+          "shap_value": 0.06657,
+          "lime_rank": 4,
+          "shap_rank": 4,
+          "in_lime_top_k": true,
+          "in_shap_top_k": true,
+          "same_direction": true
+        },
+        {
+          "feature": "mean concave points",
+          "lime_weight": 0.06807,
+          "shap_value": 0.05337,
+          "lime_rank": 5,
+          "shap_rank": 5,
+          "in_lime_top_k": true,
+          "in_shap_top_k": true,
+          "same_direction": true
+        }
+      ],
+      "lime_top10": [
+        {
+          "feature": "worst area",
+          "rule": "worst area > 1122.50",
+          "weight": 0.13751
+        },
+        {
+          "feature": "worst concave points",
+          "rule": "worst concave points > 0.16",
+          "weight": 0.1155
+        },
+        {
+          "feature": "worst perimeter",
+          "rule": "worst perimeter > 127.00",
+          "weight": 0.0993
+        },
+        {
+          "feature": "worst radius",
+          "rule": "worst radius > 19.19",
+          "weight": 0.08969
+        },
+        {
+          "feature": "mean concave points",
+          "rule": "mean concave points > 0.07",
+          "weight": 0.06807
+        },
+        {
+          "feature": "area error",
+          "rule": "area error > 45.39",
+          "weight": 0.05871
+        },
+        {
+          "feature": "mean area",
+          "rule": "mean area > 795.50",
+          "weight": 0.05528
+        },
+        {
+          "feature": "mean radius",
+          "rule": "mean radius > 15.93",
+          "weight": 0.0295
+        },
+        {
+          "feature": "radius error",
+          "rule": "radius error > 0.48",
+          "weight": 0.0284
+        },
+        {
+          "feature": "mean perimeter",
+          "rule": "mean perimeter > 104.50",
+          "weight": 0.02229
+        }
+      ],
+      "shap_top10": [
+        {
+          "feature": "worst area",
+          "value": 1866.0,
+          "shap_value": 0.10868
+        },
+        {
+          "feature": "worst perimeter",
+          "value": 165.9,
+          "shap_value": 0.08837
+        },
+        {
+          "feature": "worst concave points",
+          "value": 0.1789,
+          "shap_value": 0.07645
+        },
+        {
+          "feature": "worst radius",
+          "value": 24.86,
+          "shap_value": 0.06657
+        },
+        {
+          "feature": "mean concave points",
+          "value": 0.07951,
+          "shap_value": 0.05337
+        },
+        {
+          "feature": "area error",
+          "value": 96.05,
+          "shap_value": 0.0465
+        },
+        {
+          "feature": "mean area",
+          "value": 1130.0,
+          "shap_value": 0.04498
+        },
+        {
+          "feature": "mean radius",
+          "value": 18.94,
+          "shap_value": 0.04163
+        },
+        {
+          "feature": "mean perimeter",
+          "value": 123.6,
+          "shap_value": 0.03636
+        },
+        {
+          "feature": "mean concavity",
+          "value": 0.108,
+          "shap_value": 0.01894
+        }
+      ],
+      "lime_stability": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "mean_pairwise_jaccard_top_k": 0.8666666666666666,
+        "min_pairwise_jaccard_top_k": 0.6666666666666666,
+        "features_with_sign_flip": 9
+      },
+      "observation": "Model predicts Malignant with P(malignant)=1.000 (actual: Malignant; correct). LIME and SHAP share 5/5 top features (Jaccard 1.00; Spearman rho over |attributions| 0.90). No direction disagreement within the top-5 union. LIME surrogate local fit R^2=0.63; top-5 stability across 5 seeds: mean Jaccard 0.87."
+    },
+    {
+      "case": 2,
+      "case_type": "Clearly benign",
+      "patient_id": 74,
+      "criterion": "Lowest predicted P(malignant) on the held-out test set",
+      "found": true,
+      "true_label": "Benign",
+      "p_malignant": 0.0,
+      "shap_base_value": 0.3746739926739926,
+      "shap_sum": -0.37467399267399265,
+      "lime_intercept": 0.5661141414782112,
+      "lime_local_pred": 0.11119277163049596,
+      "lime_local_r2": 0.17380430010013825,
+      "comparison": {
+        "k": 5,
+        "lime_top_k": [
+          "worst area",
+          "worst perimeter",
+          "worst concave points",
+          "worst radius",
+          "mean concave points"
+        ],
+        "shap_top_k": [
+          "worst area",
+          "worst perimeter",
+          "worst concave points",
+          "worst radius",
+          "mean concave points"
+        ],
+        "shared_top_k": [
+          "worst area",
+          "worst perimeter",
+          "worst concave points",
+          "worst radius",
+          "mean concave points"
+        ],
+        "top_k_overlap": 5,
+        "jaccard_top_k": 1.0,
+        "spearman_abs_all_features": 0.8264738598442714,
+        "direction_agreement_shared": 1.0,
+        "direction_disagreements_union": []
+      },
+      "direction_table": [
+        {
+          "feature": "worst area",
+          "lime_weight": -0.07475,
+          "shap_value": -0.05857,
+          "lime_rank": 1,
+          "shap_rank": 1,
+          "in_lime_top_k": true,
+          "in_shap_top_k": true,
+          "same_direction": true
+        },
+        {
+          "feature": "worst perimeter",
+          "lime_weight": -0.05658,
+          "shap_value": -0.05621,
+          "lime_rank": 2,
+          "shap_rank": 2,
+          "in_lime_top_k": true,
+          "in_shap_top_k": true,
+          "same_direction": true
+        },
+        {
+          "feature": "worst concave points",
+          "lime_weight": -0.05163,
+          "shap_value": -0.04127,
+          "lime_rank": 3,
+          "shap_rank": 3,
+          "in_lime_top_k": true,
+          "in_shap_top_k": true,
+          "same_direction": true
+        },
+        {
+          "feature": "worst radius",
+          "lime_weight": -0.04636,
+          "shap_value": -0.03534,
+          "lime_rank": 4,
+          "shap_rank": 4,
+          "in_lime_top_k": true,
+          "in_shap_top_k": true,
+          "same_direction": true
+        },
+        {
+          "feature": "mean concave points",
+          "lime_weight": -0.03746,
+          "shap_value": -0.03335,
+          "lime_rank": 5,
+          "shap_rank": 5,
+          "in_lime_top_k": true,
+          "in_shap_top_k": true,
+          "same_direction": true
+        }
+      ],
+      "lime_top10": [
+        {
+          "feature": "worst area",
+          "rule": "516.15 < worst area <= 683.40",
+          "weight": -0.07475
+        },
+        {
+          "feature": "worst perimeter",
+          "rule": "84.13 < worst perimeter <= 97.65",
+          "weight": -0.05658
+        },
+        {
+          "feature": "worst concave points",
+          "rule": "0.06 < worst concave points <= 0.10",
+          "weight": -0.05163
+        },
+        {
+          "feature": "worst radius",
+          "rule": "13.02 < worst radius <= 14.92",
+          "weight": -0.04636
+        },
+        {
+          "feature": "mean concave points",
+          "rule": "0.02 < mean concave points <= 0.03",
+          "weight": -0.03746
+        },
+        {
+          "feature": "mean area",
+          "rule": "420.40 < mean area <= 546.40",
+          "weight": -0.02884
+        },
+        {
+          "feature": "area error",
+          "rule": "17.86 < area error <= 24.87",
+          "weight": -0.02232
+        },
+        {
+          "feature": "worst concavity",
+          "rule": "0.12 < worst concavity <= 0.23",
+          "weight": -0.02137
+        },
+        {
+          "feature": "worst symmetry",
+          "rule": "0.25 < worst symmetry <= 0.28",
+          "weight": -0.02077
+        },
+        {
+          "feature": "mean concavity",
+          "rule": "0.03 < mean concavity <= 0.06",
+          "weight": -0.01701
+        }
+      ],
+      "shap_top10": [
+        {
+          "feature": "worst area",
+          "value": 611.1,
+          "shap_value": -0.05857
+        },
+        {
+          "feature": "worst perimeter",
+          "value": 89.71,
+          "shap_value": -0.05621
+        },
+        {
+          "feature": "worst concave points",
+          "value": 0.0866,
+          "shap_value": -0.04127
+        },
+        {
+          "feature": "worst radius",
+          "value": 14.11,
+          "shap_value": -0.03534
+        },
+        {
+          "feature": "mean concave points",
+          "value": 0.02272,
+          "shap_value": -0.03335
+        },
+        {
+          "feature": "worst concavity",
+          "value": 0.1703,
+          "shap_value": -0.02142
+        },
+        {
+          "feature": "mean concavity",
+          "value": 0.03372,
+          "shap_value": -0.01927
+        },
+        {
+          "feature": "mean area",
+          "value": 470.9,
+          "shap_value": -0.0173
+        },
+        {
+          "feature": "mean radius",
+          "value": 12.31,
+          "shap_value": -0.01692
+        },
+        {
+          "feature": "area error",
+          "value": 19.68,
+          "shap_value": -0.01648
+        }
+      ],
+      "lime_stability": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "mean_pairwise_jaccard_top_k": 1.0,
+        "min_pairwise_jaccard_top_k": 1.0,
+        "features_with_sign_flip": 11
+      },
+      "observation": "Model predicts Benign with P(malignant)=0.000 (actual: Benign; correct). LIME and SHAP share 5/5 top features (Jaccard 1.00; Spearman rho over |attributions| 0.83). No direction disagreement within the top-5 union. LIME surrogate local fit R^2=0.17; top-5 stability across 5 seeds: mean Jaccard 1.00."
+    },
+    {
+      "case": 3,
+      "case_type": "Borderline",
+      "patient_id": 100,
+      "criterion": "Predicted P(malignant) closest to the 0.5 decision threshold",
+      "found": true,
+      "true_label": "Malignant",
+      "p_malignant": 0.5133333333333333,
+      "shap_base_value": 0.3746739926739926,
+      "shap_sum": 0.1386593406593405,
+      "lime_intercept": 0.4432621393103822,
+      "lime_local_pred": 0.4886909204728139,
+      "lime_local_r2": 0.05111854893465806,
+      "comparison": {
+        "k": 5,
+        "lime_top_k": [
+          "worst texture",
+          "mean texture",
+          "worst symmetry",
+          "worst area",
+          "worst concavity"
+        ],
+        "shap_top_k": [
+          "worst area",
+          "worst radius",
+          "worst texture",
+          "area error",
+          "worst perimeter"
+        ],
+        "shared_top_k": [
+          "worst texture",
+          "worst area"
+        ],
+        "top_k_overlap": 2,
+        "jaccard_top_k": 0.25,
+        "spearman_abs_all_features": 0.6017797552836485,
+        "direction_agreement_shared": 1.0,
+        "direction_disagreements_union": [
+          "area error",
+          "worst perimeter"
+        ]
+      },
+      "direction_table": [
+        {
+          "feature": "worst texture",
+          "lime_weight": 0.0458,
+          "shap_value": 0.0468,
+          "lime_rank": 1,
+          "shap_rank": 3,
+          "in_lime_top_k": true,
+          "in_shap_top_k": true,
+          "same_direction": true
+        },
+        {
+          "feature": "mean texture",
+          "lime_weight": 0.0309,
+          "shap_value": 0.0191,
+          "lime_rank": 2,
+          "shap_rank": 8,
+          "in_lime_top_k": true,
+          "in_shap_top_k": false,
+          "same_direction": true
+        },
+        {
+          "feature": "worst symmetry",
+          "lime_weight": -0.02068,
+          "shap_value": -0.01144,
+          "lime_rank": 3,
+          "shap_rank": 13,
+          "in_lime_top_k": true,
+          "in_shap_top_k": false,
+          "same_direction": true
+        },
+        {
+          "feature": "worst area",
+          "lime_weight": 0.02051,
+          "shap_value": 0.08142,
+          "lime_rank": 4,
+          "shap_rank": 1,
+          "in_lime_top_k": true,
+          "in_shap_top_k": true,
+          "same_direction": true
+        },
+        {
+          "feature": "worst concavity",
+          "lime_weight": 0.01829,
+          "shap_value": 0.01522,
+          "lime_rank": 5,
+          "shap_rank": 9,
+          "in_lime_top_k": true,
+          "in_shap_top_k": false,
+          "same_direction": true
+        },
+        {
+          "feature": "worst radius",
+          "lime_weight": 0.01157,
+          "shap_value": 0.07783,
+          "lime_rank": 10,
+          "shap_rank": 2,
+          "in_lime_top_k": false,
+          "in_shap_top_k": true,
+          "same_direction": true
+        },
+        {
+          "feature": "area error",
+          "lime_weight": -0.01083,
+          "shap_value": 0.04652,
+          "lime_rank": 11,
+          "shap_rank": 4,
+          "in_lime_top_k": false,
+          "in_shap_top_k": true,
+          "same_direction": false
+        },
+        {
+          "feature": "worst perimeter",
+          "lime_weight": 0.00823,
+          "shap_value": -0.04357,
+          "lime_rank": 13,
+          "shap_rank": 5,
+          "in_lime_top_k": false,
+          "in_shap_top_k": true,
+          "same_direction": false
+        }
+      ],
+      "lime_top10": [
+        {
+          "feature": "worst texture",
+          "rule": "worst texture > 30.20",
+          "weight": 0.0458
+        },
+        {
+          "feature": "mean texture",
+          "rule": "mean texture > 21.83",
+          "weight": 0.0309
+        },
+        {
+          "feature": "worst symmetry",
+          "rule": "0.25 < worst symmetry <= 0.28",
+          "weight": -0.02068
+        },
+        {
+          "feature": "worst area",
+          "rule": "683.40 < worst area <= 1122.50",
+          "weight": 0.02051
+        },
+        {
+          "feature": "worst concavity",
+          "rule": "0.23 < worst concavity <= 0.39",
+          "weight": 0.01829
+        },
+        {
+          "feature": "radius error",
+          "rule": "0.33 < radius error <= 0.48",
+          "weight": -0.01705
+        },
+        {
+          "feature": "worst smoothness",
+          "rule": "0.11 < worst smoothness <= 0.13",
+          "weight": -0.01396
+        },
+        {
+          "feature": "worst fractal dimension",
+          "rule": "0.07 < worst fractal dimension <= 0.08",
+          "weight": -0.01199
+        },
+        {
+          "feature": "worst concave points",
+          "rule": "0.10 < worst concave points <= 0.16",
+          "weight": -0.01158
+        },
+        {
+          "feature": "worst radius",
+          "rule": "14.92 < worst radius <= 19.19",
+          "weight": 0.01157
+        }
+      ],
+      "shap_top10": [
+        {
+          "feature": "worst area",
+          "value": 906.5,
+          "shap_value": 0.08142
+        },
+        {
+          "feature": "worst radius",
+          "value": 16.99,
+          "shap_value": 0.07783
+        },
+        {
+          "feature": "worst texture",
+          "value": 35.27,
+          "shap_value": 0.0468
+        },
+        {
+          "feature": "area error",
+          "value": 43.14,
+          "shap_value": 0.04652
+        },
+        {
+          "feature": "worst perimeter",
+          "value": 108.6,
+          "shap_value": -0.04357
+        },
+        {
+          "feature": "mean concave points",
+          "value": 0.04489,
+          "shap_value": -0.03685
+        },
+        {
+          "feature": "worst concave points",
+          "value": 0.1184,
+          "shap_value": -0.02171
+        },
+        {
+          "feature": "mean texture",
+          "value": 24.98,
+          "shap_value": 0.0191
+        },
+        {
+          "feature": "worst concavity",
+          "value": 0.3169,
+          "shap_value": 0.01522
+        },
+        {
+          "feature": "mean compactness",
+          "value": 0.08511,
+          "shap_value": -0.01345
+        }
+      ],
+      "lime_stability": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "mean_pairwise_jaccard_top_k": 0.4797619047619047,
+        "min_pairwise_jaccard_top_k": 0.25,
+        "features_with_sign_flip": 14
+      },
+      "observation": "Model predicts Malignant with P(malignant)=0.513 (actual: Malignant; correct). LIME and SHAP share 2/5 top features (Jaccard 0.25; Spearman rho over |attributions| 0.60). Opposite direction for: area error, worst perimeter. LIME surrogate local fit R^2=0.05; top-5 stability across 5 seeds: mean Jaccard 0.48."
+    },
+    {
+      "case": 4,
+      "case_type": "Ranking divergence",
+      "patient_id": 86,
+      "criterion": "Lowest top-5 Jaccard overlap between LIME and SHAP (ties: lowest Spearman)",
+      "found": true,
+      "true_label": "Malignant",
+      "p_malignant": 0.2966666666666667,
+      "shap_base_value": 0.3746739926739926,
+      "shap_sum": -0.07800732600732614,
+      "lime_intercept": 0.442700152500885,
+      "lime_local_pred": 0.4892330115348972,
+      "lime_local_r2": 0.027418131080244934,
+      "comparison": {
+        "k": 5,
+        "lime_top_k": [
+          "worst area",
+          "mean texture",
+          "worst concavity",
+          "worst texture",
+          "fractal dimension error"
+        ],
+        "shap_top_k": [
+          "mean concavity",
+          "worst perimeter",
+          "worst concave points",
+          "mean concave points",
+          "area error"
+        ],
+        "shared_top_k": [],
+        "top_k_overlap": 0,
+        "jaccard_top_k": 0.0,
+        "spearman_abs_all_features": 0.26896551724137935,
+        "direction_agreement_shared": NaN,
+        "direction_disagreements_union": [
+          "worst area",
+          "worst perimeter",
+          "mean concave points",
+          "area error"
+        ]
+      },
+      "direction_table": [
+        {
+          "feature": "worst area",
+          "lime_weight": 0.02163,
+          "shap_value": -0.02661,
+          "lime_rank": 1,
+          "shap_rank": 6,
+          "in_lime_top_k": true,
+          "in_shap_top_k": false,
+          "same_direction": false
+        },
+        {
+          "feature": "mean texture",
+          "lime_weight": 0.01836,
+          "shap_value": 0.00993,
+          "lime_rank": 2,
+          "shap_rank": 14,
+          "in_lime_top_k": true,
+          "in_shap_top_k": false,
+          "same_direction": true
+        },
+        {
+          "feature": "worst concavity",
+          "lime_weight": 0.01578,
+          "shap_value": 0.02403,
+          "lime_rank": 3,
+          "shap_rank": 8,
+          "in_lime_top_k": true,
+          "in_shap_top_k": false,
+          "same_direction": true
+        },
+        {
+          "feature": "worst texture",
+          "lime_weight": 0.0156,
+          "shap_value": 0.00857,
+          "lime_rank": 4,
+          "shap_rank": 15,
+          "in_lime_top_k": true,
+          "in_shap_top_k": false,
+          "same_direction": true
+        },
+        {
+          "feature": "fractal dimension error",
+          "lime_weight": 0.01477,
+          "shap_value": 0.0018,
+          "lime_rank": 5,
+          "shap_rank": 25,
+          "in_lime_top_k": true,
+          "in_shap_top_k": false,
+          "same_direction": true
+        },
+        {
+          "feature": "mean concavity",
+          "lime_weight": 0.00135,
+          "shap_value": 0.04963,
+          "lime_rank": 29,
+          "shap_rank": 1,
+          "in_lime_top_k": false,
+          "in_shap_top_k": true,
+          "same_direction": true
+        },
+        {
+          "feature": "worst perimeter",
+          "lime_weight": 0.00857,
+          "shap_value": -0.03437,
+          "lime_rank": 14,
+          "shap_rank": 2,
+          "in_lime_top_k": false,
+          "in_shap_top_k": true,
+          "same_direction": false
+        },
+        {
+          "feature": "worst concave points",
+          "lime_weight": -0.0121,
+          "shap_value": -0.03095,
+          "lime_rank": 8,
+          "shap_rank": 3,
+          "in_lime_top_k": false,
+          "in_shap_top_k": true,
+          "same_direction": true
+        },
+        {
+          "feature": "mean concave points",
+          "lime_weight": 0.00244,
+          "shap_value": -0.03079,
+          "lime_rank": 24,
+          "shap_rank": 4,
+          "in_lime_top_k": false,
+          "in_shap_top_k": true,
+          "same_direction": false
+        },
+        {
+          "feature": "area error",
+          "lime_weight": -0.01041,
+          "shap_value": 0.02696,
+          "lime_rank": 11,
+          "shap_rank": 5,
+          "in_lime_top_k": false,
+          "in_shap_top_k": true,
+          "same_direction": false
+        }
+      ],
+      "lime_top10": [
+        {
+          "feature": "worst area",
+          "rule": "683.40 < worst area <= 1122.50",
+          "weight": 0.02163
+        },
+        {
+          "feature": "mean texture",
+          "rule": "18.90 < mean texture <= 21.83",
+          "weight": 0.01836
+        },
+        {
+          "feature": "worst concavity",
+          "rule": "0.23 < worst concavity <= 0.39",
+          "weight": 0.01578
+        },
+        {
+          "feature": "worst texture",
+          "rule": "25.48 < worst texture <= 30.20",
+          "weight": 0.0156
+        },
+        {
+          "feature": "fractal dimension error",
+          "rule": "0.00 < fractal dimension error <= 0.00",
+          "weight": 0.01477
+        },
+        {
+          "feature": "radius error",
+          "rule": "0.33 < radius error <= 0.48",
+          "weight": -0.0146
+        },
+        {
+          "feature": "worst smoothness",
+          "rule": "0.11 < worst smoothness <= 0.13",
+          "weight": -0.01441
+        },
+        {
+          "feature": "worst concave points",
+          "rule": "0.10 < worst concave points <= 0.16",
+          "weight": -0.0121
+        },
+        {
+          "feature": "worst radius",
+          "rule": "14.92 < worst radius <= 19.19",
+          "weight": 0.01065
+        },
+        {
+          "feature": "mean area",
+          "rule": "546.40 < mean area <= 795.50",
+          "weight": -0.01051
+        }
+      ],
+      "shap_top10": [
+        {
+          "feature": "mean concavity",
+          "value": 0.1204,
+          "shap_value": 0.04963
+        },
+        {
+          "feature": "worst perimeter",
+          "value": 108.4,
+          "shap_value": -0.03437
+        },
+        {
+          "feature": "worst concave points",
+          "value": 0.1225,
+          "shap_value": -0.03095
+        },
+        {
+          "feature": "mean concave points",
+          "value": 0.04938,
+          "shap_value": -0.03079
+        },
+        {
+          "feature": "area error",
+          "value": 38.87,
+          "shap_value": 0.02696
+        },
+        {
+          "feature": "worst area",
+          "value": 808.9,
+          "shap_value": -0.02661
+        },
+        {
+          "feature": "mean radius",
+          "value": 14.48,
+          "shap_value": -0.02414
+        },
+        {
+          "feature": "worst concavity",
+          "value": 0.3349,
+          "shap_value": 0.02403
+        },
+        {
+          "feature": "mean area",
+          "value": 648.2,
+          "shap_value": -0.02073
+        },
+        {
+          "feature": "worst radius",
+          "value": 16.21,
+          "shap_value": -0.01789
+        }
+      ],
+      "lime_stability": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "mean_pairwise_jaccard_top_k": 0.3857142857142857,
+        "min_pairwise_jaccard_top_k": 0.0,
+        "features_with_sign_flip": 16
+      },
+      "observation": "Model predicts Benign with P(malignant)=0.297 (actual: Malignant; INCORRECT). LIME and SHAP share 0/5 top features (Jaccard 0.00; Spearman rho over |attributions| 0.27). Opposite direction for: worst area, worst perimeter, mean concave points, area error. LIME surrogate local fit R^2=0.03; top-5 stability across 5 seeds: mean Jaccard 0.39."
+    },
+    {
+      "case": 5,
+      "case_type": "Direction disagreement",
+      "patient_id": 73,
+      "criterion": "Most features (within the union of both top-5 lists) with opposite LIME/SHAP sign",
+      "found": true,
+      "true_label": "Malignant",
+      "p_malignant": 0.16,
+      "shap_base_value": 0.3746739926739926,
+      "shap_sum": -0.2146739926739928,
+      "lime_intercept": 0.4727933484815095,
+      "lime_local_pred": 0.39808267851909107,
+      "lime_local_r2": 0.060567032050332426,
+      "comparison": {
+        "k": 5,
+        "lime_top_k": [
+          "worst texture",
+          "mean texture",
+          "worst area",
+          "worst symmetry",
+          "area error"
+        ],
+        "shap_top_k": [
+          "worst perimeter",
+          "worst texture",
+          "mean concavity",
+          "worst concave points",
+          "mean concave points"
+        ],
+        "shared_top_k": [
+          "worst texture"
+        ],
+        "top_k_overlap": 1,
+        "jaccard_top_k": 0.1111111111111111,
+        "spearman_abs_all_features": 0.39265850945494996,
+        "direction_agreement_shared": 1.0,
+        "direction_disagreements_union": [
+          "worst area",
+          "worst perimeter",
+          "mean concavity",
+          "mean concave points"
+        ]
+      },
+      "direction_table": [
+        {
+          "feature": "worst texture",
+          "lime_weight": -0.04499,
+          "shap_value": -0.02704,
+          "lime_rank": 1,
+          "shap_rank": 2,
+          "in_lime_top_k": true,
+          "in_shap_top_k": true,
+          "same_direction": true
+        },
+        {
+          "feature": "mean texture",
+          "lime_weight": -0.04428,
+          "shap_value": -0.01653,
+          "lime_rank": 2,
+          "shap_rank": 6,
+          "in_lime_top_k": true,
+          "in_shap_top_k": false,
+          "same_direction": true
+        },
+        {
+          "feature": "worst area",
+          "lime_weight": 0.02198,
+          "shap_value": -0.01094,
+          "lime_rank": 3,
+          "shap_rank": 9,
+          "in_lime_top_k": true,
+          "in_shap_top_k": false,
+          "same_direction": false
+        },
+        {
+          "feature": "worst symmetry",
+          "lime_weight": -0.02046,
+          "shap_value": -0.00989,
+          "lime_rank": 4,
+          "shap_rank": 13,
+          "in_lime_top_k": true,
+          "in_shap_top_k": false,
+          "same_direction": true
+        },
+        {
+          "feature": "area error",
+          "lime_weight": -0.01842,
+          "shap_value": -0.01396,
+          "lime_rank": 5,
+          "shap_rank": 7,
+          "in_lime_top_k": true,
+          "in_shap_top_k": false,
+          "same_direction": true
+        },
+        {
+          "feature": "worst perimeter",
+          "lime_weight": 0.00812,
+          "shap_value": -0.03775,
+          "lime_rank": 13,
+          "shap_rank": 1,
+          "in_lime_top_k": false,
+          "in_shap_top_k": true,
+          "same_direction": false
+        },
+        {
+          "feature": "mean concavity",
+          "lime_weight": 0.00293,
+          "shap_value": -0.02482,
+          "lime_rank": 23,
+          "shap_rank": 3,
+          "in_lime_top_k": false,
+          "in_shap_top_k": true,
+          "same_direction": false
+        },
+        {
+          "feature": "worst concave points",
+          "lime_weight": -0.01205,
+          "shap_value": -0.01824,
+          "lime_rank": 8,
+          "shap_rank": 4,
+          "in_lime_top_k": false,
+          "in_shap_top_k": true,
+          "same_direction": true
+        },
+        {
+          "feature": "mean concave points",
+          "lime_weight": 0.00242,
+          "shap_value": -0.01716,
+          "lime_rank": 25,
+          "shap_rank": 5,
+          "in_lime_top_k": false,
+          "in_shap_top_k": true,
+          "same_direction": false
+        }
+      ],
+      "lime_top10": [
+        {
+          "feature": "worst texture",
+          "rule": "worst texture <= 21.49",
+          "weight": -0.04499
+        },
+        {
+          "feature": "mean texture",
+          "rule": "mean texture <= 16.34",
+          "weight": -0.04428
+        },
+        {
+          "feature": "worst area",
+          "rule": "683.40 < worst area <= 1122.50",
+          "weight": 0.02198
+        },
+        {
+          "feature": "worst symmetry",
+          "rule": "0.25 < worst symmetry <= 0.28",
+          "weight": -0.02046
+        },
+        {
+          "feature": "area error",
+          "rule": "17.86 < area error <= 24.87",
+          "weight": -0.01842
+        },
+        {
+          "feature": "worst concavity",
+          "rule": "0.23 < worst concavity <= 0.39",
+          "weight": 0.01785
+        },
+        {
+          "feature": "worst fractal dimension",
+          "rule": "worst fractal dimension > 0.09",
+          "weight": 0.01229
+        },
+        {
+          "feature": "worst concave points",
+          "rule": "0.10 < worst concave points <= 0.16",
+          "weight": -0.01205
+        },
+        {
+          "feature": "worst radius",
+          "rule": "14.92 < worst radius <= 19.19",
+          "weight": 0.01107
+        },
+        {
+          "feature": "worst compactness",
+          "rule": "worst compactness > 0.34",
+          "weight": 0.01089
+        }
+      ],
+      "shap_top10": [
+        {
+          "feature": "worst perimeter",
+          "value": 110.3,
+          "shap_value": -0.03775
+        },
+        {
+          "feature": "worst texture",
+          "value": 20.86,
+          "shap_value": -0.02704
+        },
+        {
+          "feature": "mean concavity",
+          "value": 0.07789,
+          "shap_value": -0.02482
+        },
+        {
+          "feature": "worst concave points",
+          "value": 0.1383,
+          "shap_value": -0.01824
+        },
+        {
+          "feature": "mean concave points",
+          "value": 0.05069,
+          "shap_value": -0.01716
+        },
+        {
+          "feature": "mean texture",
+          "value": 15.79,
+          "shap_value": -0.01653
+        },
+        {
+          "feature": "area error",
+          "value": 23.35,
+          "shap_value": -0.01396
+        },
+        {
+          "feature": "worst radius",
+          "value": 16.57,
+          "shap_value": -0.01264
+        },
+        {
+          "feature": "worst area",
+          "value": 812.4,
+          "shap_value": -0.01094
+        },
+        {
+          "feature": "mean perimeter",
+          "value": 90.43,
+          "shap_value": -0.01081
+        }
+      ],
+      "lime_stability": {
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "mean_pairwise_jaccard_top_k": 0.6047619047619048,
+        "min_pairwise_jaccard_top_k": 0.42857142857142855,
+        "features_with_sign_flip": 12
+      },
+      "observation": "Model predicts Benign with P(malignant)=0.160 (actual: Malignant; INCORRECT). LIME and SHAP share 1/5 top features (Jaccard 0.11; Spearman rho over |attributions| 0.39). Opposite direction for: worst area, worst perimeter, mean concavity, mean concave points. LIME surrogate local fit R^2=0.06; top-5 stability across 5 seeds: mean Jaccard 0.60."
+    }
+  ]
+}

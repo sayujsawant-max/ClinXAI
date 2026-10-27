@@ -1,0 +1,37 @@
+PASS All 26 expected PNG figures exist and decode
+PASS 5 SHAP force HTML files contain embedded JS
+PASS No stray/unexpected PNGs in outputs/figures
+PASS Confusion matrix in metrics.json matches recomputation | 72,0,3,39
+PASS Confusion matrix sums to test size 114 and actual malignant = 42
+PASS All RF metrics in metrics.json match recomputation | {'accuracy': 0.9737, 'precision': 1.0, 'recall_sensitivity': 0.9286, 'f1': 0.963, 'roc_auc': 0.9944, 'specificity': np.float64(1.0)}
+PASS Metrics are internally consistent with the confusion matrix
+PASS metrics.csv agrees with metrics.json
+PASS Baseline metrics match recomputation
+PASS dataset_overview.csv has 30 features
+PASS Saved labels: malignant=1 matches sklearn raw target==0
+PASS Model classes_ == [0,1] and feature order == sklearn order
+PASS SHAP values used = class-1 (malignant) slice
+PASS SHAP class-1 values = -(class-0 values) (binary consistency)
+PASS SHAP base + sum == P(malignant) for all 114 test patients | max err 4.44e-16
+PASS SHAP base value equals mean training P(malignant)-weighted base (0.3747) | 0.3747
+PASS Sign sanity: highest-risk patient has positive total SHAP, lowest-risk negative
+PASS LIME sign sanity: top-5 weights sum >0 for highest-risk, <0 for lowest-risk patient | +0.513 / -0.301
+PASS LIME model_proba equals RF P(malignant)
+PASS test_set_lime_vs_shap.csv covers all 114 test patients
+PASS p_malignant column matches model
+PASS 5 case studies, all found
+PASS Case 1 = max P(malignant)
+PASS Case 2 = min P(malignant)
+PASS Case 3 = closest to 0.5
+PASS Case 4 (#86) has the lowest top-5 Jaccard among remaining patients
+PASS Case 5 (#73) has the most direction disagreements among remaining patients
+PASS Case 1 (Clearly malignant, #70) re-runs identically (LIME seed 42, SHAP, labels) | P=1.000, actual=Malignant, pred=Malignant, overlap=5/5, rho=0.90, dir=[], R2=0.63
+PASS Case 2 (Clearly benign, #74) re-runs identically (LIME seed 42, SHAP, labels) | P=0.000, actual=Benign, pred=Benign, overlap=5/5, rho=0.83, dir=[], R2=0.17
+PASS Case 3 (Borderline, #100) re-runs identically (LIME seed 42, SHAP, labels) | P=0.513, actual=Malignant, pred=Malignant, overlap=2/5, rho=0.60, dir=['area error', 'worst perimeter'], R2=0.05
+PASS Case 4 (Ranking divergence, #86) re-runs identically (LIME seed 42, SHAP, labels) | P=0.297, actual=Malignant, pred=Benign, overlap=0/5, rho=0.27, dir=['worst area', 'worst perimeter', 'mean concave points', 'area error'], R2=0.03
+PASS Case 5 (Direction disagreement, #73) re-runs identically (LIME seed 42, SHAP, labels) | P=0.160, actual=Malignant, pred=Benign, overlap=1/5, rho=0.39, dir=['worst area', 'worst perimeter', 'mean concavity', 'mean concave points'], R2=0.06
+PASS Patient #86 is a false negative (actual malignant, predicted benign)
+PASS Patient #73 is a false negative (actual malignant, predicted benign)
+PASS Aggregate stats match per-patient CSV
+
+35/35 checks passed

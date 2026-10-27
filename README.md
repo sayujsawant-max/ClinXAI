@@ -10,7 +10,13 @@ each prediction with **LIME** (a local surrogate model) and **SHAP** (local and 
 measures where the two explanations agree and where they disagree.
 
 ## Live demo (Streamlit Community Cloud)
-Repository: https://github.com/sayujsawant-max/ClinXAI · Public app link: *added after deployment*
+**Live app:** https://clinxai-8vkbnrgqqfnwa9gwa9tywa.streamlit.app/
+Repository: https://github.com/sayujsawant-max/ClinXAI
+
+The deployed app was checked in a real browser (Microsoft Edge): all seven tabs load with no errors, and it shows the
+same results as the local build (accuracy 0.9737, recall 0.9286, ROC-AUC 0.9944; mean top-5 Jaccard 0.62).
+Free Streamlit apps sleep after a period without visitors. If you see a "wake up" button, click it and the app
+restarts in under a minute.
 
 To deploy (one-time, about 5 minutes):
 1. Sign in at https://share.streamlit.io with the GitHub account that owns this repository.
